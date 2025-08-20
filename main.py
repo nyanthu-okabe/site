@@ -65,8 +65,9 @@ def search():
     return template('search', query=query, results=results, error=error,
                     region=region, timelimit=timelimit, safesearch=safesearch)
 
-@application.route('/all_image/<url:path>')
-def all_image(url):
+@application.route('/all_image')
+def all_image():
+    url = request.query.url
     display_image_urls = []
     error = None
     try:

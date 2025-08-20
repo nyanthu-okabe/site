@@ -30,7 +30,7 @@
                     <strong>{{ result.get('title', 'No Title') }}</strong>
                 </a>
                 <p class="snippet">{{ result.get('body', '') }}</p>
-                <p><a href="/all_image/{{ result.get('href') or result.get('url') }}">このサイトの画像をすべて表示</a></p>
+                <p><a href="/all_image?url={{ result.get('href') or result.get('url') }}">このサイトの画像をすべて表示</a></p>
             </li>
         % end
         </ul>
