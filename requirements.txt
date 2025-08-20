@@ -1,4 +1,4 @@
 bottle
-duckduckgo-search
+ddgs
 requests
 beautifulsoup4
